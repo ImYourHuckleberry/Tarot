@@ -3,10 +3,13 @@ import Button from "./components/Button";
 import ShuffleButton from "./components/ShuffleButton";
 import CardList from "./components/CardList";
 
+const giphyKey = "hnl0wbsUchsq9et7SkB4f0F3KJ4XL11T"
+
 const tarotDeck = [
   {
     index: 0,
     card: "AS",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/fool/",
     flipped: false,
     name: "The Fool",
     image:
@@ -17,6 +20,7 @@ const tarotDeck = [
   {
     index: 1,
     card: "AD",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/magician/",
     flipped: false,
     name: "The Magician",
     image:
@@ -27,6 +31,7 @@ const tarotDeck = [
   {
     index: 2,
     card: "AH",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/high-priestess/",
     flipped: false,
     name: "The High Preistess",
     image:
@@ -37,6 +42,7 @@ const tarotDeck = [
   {
     index: 3,
     card: "AC",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/empress/",
     flipped: false,
     name: "The Empress",
     image:
@@ -47,6 +53,7 @@ const tarotDeck = [
   {
     index: 4,
     card: "KS",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/emperor/",
     flipped: false,
     name: "The Emperor",
     image:
@@ -57,6 +64,7 @@ const tarotDeck = [
   {
     index: 5,
     card: "KD",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/hierophant/",
     flipped: false,
     name: "The Heirophant",
     image:
@@ -68,6 +76,7 @@ const tarotDeck = [
   {
     index: 6,
     card: "KH",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/lovers/",
     flipped: false,
     name: "The Lovers",
     image:
@@ -78,6 +87,7 @@ const tarotDeck = [
   {
     index: 7,
     card: "KC",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/chariot/",
     flipped: false,
     name: "The Chairot",
     image:
@@ -88,6 +98,7 @@ const tarotDeck = [
   {
     index: 8,
     card: "QS",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/strength/",
     flipped: false,
     name: "Stregnth",
     image:
@@ -98,6 +109,7 @@ const tarotDeck = [
   {
     index: 9,
     card: "QD",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/hermit/",
     flipped: false,
     name: "The Hermit",
     image:
@@ -108,6 +120,7 @@ const tarotDeck = [
   {
     index: 10,
     card: "QH",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/wheel-of-fortune/",
     flipped: false,
     name: "Wheel of Fortune",
     image:
@@ -118,6 +131,7 @@ const tarotDeck = [
   {
     index: 11,
     card: "QC",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/justice/",
     flipped: false,
     name: "Justice",
     image:
@@ -128,6 +142,7 @@ const tarotDeck = [
   {
     index: 12,
     card: "JS",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/hanged-man/",
     flipped: false,
     name: "The Hanged Man",
 
@@ -139,6 +154,7 @@ const tarotDeck = [
   {
     index: 13,
     card: "JD",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/death/",
     flipped: false,
     name: "Death",
 
@@ -150,6 +166,7 @@ const tarotDeck = [
   {
     index: 14,
     card: "JH",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/temperance/",
     lipped: false,
     name: "Temperance",
 
@@ -161,6 +178,7 @@ const tarotDeck = [
   {
     index: 15,
     card: "JC",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/devil/",
     flipped: false,
     name: "The Devil",
 
@@ -172,6 +190,7 @@ const tarotDeck = [
   {
     index: 16,
     card: "0S",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/tower/",
     flipped: false,
     name: "The Tower",
 
@@ -183,6 +202,7 @@ const tarotDeck = [
   {
     index: 17,
     card: "0D",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/star/",
     flipped: false,
     name: "The Star",
 
@@ -194,6 +214,7 @@ const tarotDeck = [
   {
     index: 18,
     card: "0H",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/moon/",
     flipped: false,
     name: "The Moon",
 
@@ -205,6 +226,7 @@ const tarotDeck = [
   {
     index: 19,
     card: "0C",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/sun/",
     flipped: false,
     name: "The Sun",
 
@@ -216,6 +238,7 @@ const tarotDeck = [
   {
     index: 20,
     card: "9S",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/judgement/",
     flipped: false,
     name: "Judgement",
 
@@ -227,6 +250,7 @@ const tarotDeck = [
   {
     index: 21,
     card: "9D",
+    url: "https://www.biddytarot.com/tarot-card-meanings/major-arcana/world/",
     flipped: false,
     name: "The World",
 
@@ -264,7 +288,12 @@ class App extends Component {
   };
 
   getThreeCards = async () => {
-    //maybe put a deck reshuffle here
+    let txt="";
+    let question = prompt("What would you like the cards to tell you?", "Your Question Here");
+    if (question == null || question == ""|| question=="Your Question Here") {
+      txt = "User wishes to stay ignorant";
+      alert(txt)
+    }else{
     const response = await fetch(
       "https://deckofcardsapi.com/api/deck/" +
         this.state.deck_id +
@@ -287,10 +316,43 @@ class App extends Component {
       }
     }
     this.setState({ cards: cards });
+    this.onShuffle();
 
     console.log("these are the card codes");
     console.log(cards);
+    console.log(data)
   };
+}
+  
+
+  // getFiveCards = async () => {
+  //   //maybe put a deck reshuffle here
+  //   const response = await fetch(
+  //     "https://deckofcardsapi.com/api/deck/" +
+  //       this.state.deck_id +
+  //       "/draw/?count=5"
+  //   );
+  //   const data = await response.json();
+
+  //   const cards = data.cards.map(card =>
+  //     tarotDeck.find(tarot => tarot.card === card.code)
+  //   );
+
+  //   for (let i = 0; i < cards.length; i++) {
+  //     let number = Math.round(Math.random());
+
+  //     if (number === 0) {
+  //       cards[i].flipped = false;
+  //     } else {
+  //       console.log("next part ran");
+  //       cards[i].flipped = true;
+  //     }
+  //   }
+  //   this.setState({ cards: cards });
+
+  //   console.log("these are the card codes");
+  //   console.log(cards);
+  // };
 
   onShuffle = async () => {
     await fetch(
@@ -298,13 +360,19 @@ class App extends Component {
     );
   };
 
+  
+
   displayTarotCards;
 
   render() {
+    
     return (
       <div className="App">
         <div>
-          <Button onGetThreeCards={this.getThreeCards} />
+          <Button 
+          onGetThreeCards={this.getThreeCards} 
+          
+          />
 
           <CardList
             cards={this.state.cards}
@@ -312,6 +380,7 @@ class App extends Component {
           />
           <ShuffleButton onShuffle={this.onShuffle} />
         </div>
+        
       </div>
     );
   }

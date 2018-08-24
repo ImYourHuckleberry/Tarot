@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Button extends Component {
   state = {};
   render() {
-    const { onGetThreeCards } = this.props;
+    const { onGetThreeCards} = this.props;
     return (
       <div>
         <button onClick={onGetThreeCards}>
